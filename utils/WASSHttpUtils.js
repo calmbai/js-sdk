@@ -8,16 +8,21 @@ const baseArgs = {charset: Cons.UTF8, sign: '', time: Date.now(), app_id: Cons.a
 exports.request = async function (data) {
     var allAgrs = Object.assign(baseArgs, data.requestData);
     var orignStr = JSON.stringify(allAgrs);
-    console.log("orignStr->", orignStr);
+    if(Cons.DEBUG){
+        console.log("orignStr->", orignStr);
+    }
 
-    var paramDecrypted = RSA.privateKeyEncrypt(orignStr);
-    console.log("paramDecrypted->", paramDecrypted);
+
+    var paramEncrypted = RSA.privateKeyEncrypt(orignStr);
+    if(Cons.DEBUG) {
+        console.log("paramEncrypted->", paramEncrypted);
+    }
     const options = {
         method: data.method,
         url: Cons.HOST + Cons.VER + data.url,
         form: {
             app_id: Cons.app_id,
-            data: paramDecrypted
+            data: paramEncrypted
         }
 
     };

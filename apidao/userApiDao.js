@@ -13,8 +13,7 @@ exports.registerByPhone = async function (reqData) {
         method: Cons.POST,
         requestData: reqData
     });
-    //console.log("raw resp Data->",responseWAPIData)
-    //console.log("decrypt resp Data->",RSA.publicKeyDecrypt(JSON.parse(responseWAPIData).data));
+    //console.log("raw resp Data->",JSON.parse(respData).data)
     return RSA.publicKeyDecrypt(JSON.parse(respData).data);
 };
 

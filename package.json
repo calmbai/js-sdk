@@ -1,5 +1,5 @@
 {
-  "name": "js-wapi",
+  "name": "js-waas-sdk",
   "version": "1.0.0",
   "description": "node sdk tool for calling waas service",
   "main": "index.js",
@@ -11,7 +11,7 @@
     "url": "https://github.com/HiCoinCom/js-sdk.git"
   },
   "keywords": [
-    "wapi"
+    "waas"
   ],
   "author": "zhangpeizheng",
   "license": "ISC",
@@ -20,11 +20,9 @@
   },
   "homepage": "https://github.com/HiCoinCom/js-sdk#readme",
   "dependencies": {
+    "js-waas-sdk": "^1.0.0",
     "node-rsa": "^1.1.1",
     "request": "^2.88.2",
     "urlsafe-base64": "^1.0.0"
-  },
-  "devDependencies": {
-
   }
 }

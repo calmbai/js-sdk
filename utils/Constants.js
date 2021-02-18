@@ -1,12 +1,12 @@
+exports.DEBUG=false;
 exports.UTF8 = 'utf8';
-exports.WAPIAPPID = 'baaceb1e506e1b5d7d1f0a3b1622583b';
 
-//about the https
-exports.HOST = 'http://awstestopenapi.hiwallet.pro/api/';
-exports.VER = 'v2';
+//about the http
+exports.HOST = "";
+exports.VER = '/api/v2';
 exports.GET = 'GET';
 exports.POST = 'POST';
-exports.app_id = 'baaceb1e506e1b5d7d1f0a3b1622583b';
+exports.app_id = '';
 
 //用户相关操作
 exports.createUser = "/user/createUser";
@@ -32,4 +32,27 @@ exports.minerFeeList="/billing/minerFeeList";
 exports.withdraw="/billing/withdraw";
 exports.syncWithdrawList="/billing/syncWithdrawList";
 exports.getWithdrawList="/billing/withdrawList";
+
+exports.privateKey = "";
+exports.hiCoinPubKey = "";
+
+
+exports.setPrivateKey=function (pKey) {
+    this.privateKey='-----BEGIN PRIVATE KEY-----' +pKey+'-----END PRIVATE KEY-----';
+};
+
+exports.setPubKey=function (pKey) {
+    this.hiCoinPubKey='-----BEGIN PUBLIC KEY-----' +pKey+ '-----END PUBLIC KEY-----';;
+};
+
+exports.setHost=function (host) {
+    this.HOST=host;
+};
+
+exports.setAppId=function (appId) {
+    this.app_id=appId;
+};
+exports.setDebug=function (debug) {
+    this.DEBUG=debug;
+};
 
