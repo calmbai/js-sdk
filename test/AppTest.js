@@ -53,8 +53,7 @@ billingApi.withdraw({
     "from_address": "0x754b0c610e011d0d40c810ef857b4dd989a67332",
     "to_address": "0x754b0c610e011d0d40c810ef857b4dd989a67332",
     "amount": "1.00000022",
-    "symbol": "ETH",
-    "focus_online": 0
+    "symbol": "ETH"
 }).then(function (data) {
     console.debug("提现结果：------" + JSON.stringify(data));
 });
@@ -93,7 +92,7 @@ console.debug("解密用户充值异步回调通知请求参数---" + res1);
 var res2 = asyncApi.decodeWithdrawRequest('');
 console.debug("解密提现二次验证请求参数---" + res2);
 //17. 加密二次验证提现响应数据
-var res3 = asyncApi.encodeWithdrawResponse({a: "b", hafaf: 23434});
+var res3 = asyncApi.encodeWithdrawResponse({"check_sum":"1234","time":"12345678"});
 console.debug("加密二次验证提现响应数据---" + res3);
 
 
