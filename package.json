@@ -1,6 +1,6 @@
 {
   "name": "js-waas-sdk",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "node sdk tool for calling waas service",
   "main": "index.js",
   "scripts": {

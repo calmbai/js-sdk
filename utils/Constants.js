@@ -19,9 +19,9 @@ exports.getDepositAddress = "/account/getDepositAddress";
 exports.getByUidAndSymbol = "/account/getByUidAndSymbol";
 exports.getCompanyBySymbol = "/account/getCompanyBySymbol";
 
-// exports.transfer="/account/transfer";
-// exports.getTransferList="/account/transferList";
-// exports.syncTransferList="/account/syncTransferList";
+exports.transfer="/account/transfer";
+exports.getTransferList="/account/transferList";
+exports.syncTransferList="/account/syncTransferList";
 
 
 //充值相关操作api

@@ -4,6 +4,7 @@ const billingApi = require('../apidao/BillingApiDao');
 const http = require('http');
 const Cons = require('../utils/Constants');
 const asyncApi = require('../apidao/AsyncNotifyApiDao');
+const transferApi = require('../apidao/TransferApiDao');
 
 /*http.createServer(function (request, response) {
 
@@ -95,4 +96,18 @@ console.debug("解密提现二次验证请求参数---" + res2);
 var res3 = asyncApi.encodeWithdrawResponse({"check_sum":"1234","time":"12345678"});
 console.debug("加密二次验证提现响应数据---" + res3);
 
+//18.WaaS商户转账
+transferApi.transfer({request_id: "1233456778",symbol:"usdt",to:"10c533a212a795f692db6684d70c95e9",remark:"transfer123",amount:"1.0000002"}).then(function (data) {
+    console.debug("WaaS商户转账结果：------" + JSON.stringify(data));
+});
+
+//19.批量查询转账记录
+transferApi.getTransferList({ids: "123",ids_type:"request_id"}).then(function (data) {
+    console.debug("批量查询转账记录结果：------" + JSON.stringify(data));
+});
+
+//20.同步所有转账记录（分页）
+transferApi.getTransferList({max_id:0}).then(function (data) {
+    console.debug("同步所有转账记录（分页）结果：------" + JSON.stringify(data));
+});
 
