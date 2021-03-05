@@ -46,9 +46,9 @@ accountApi.getDepositAddress({symbol: "eth", uid: "9027408"}).then(function (dat
     console.debug("获取商户归集账户余额结果：------" + JSON.stringify(data));
 });*/
 //7.根据币种及用户id查询用户的账户
-/*accountApi.getByUidAndSymbol({"symbol": "VLX", "uid": 9027408}).then(function (data) {
+accountApi.getByUidAndSymbol({"symbol": "VLX", "uid": 9027408}).then(function (data) {
     console.debug("根据币种及用户id查询用户的账户结果：------" + JSON.stringify(data));
-});*/
+});
 //8.提现  9027408
 /*billingApi.withdraw({
     "request_id": 1234567890,
