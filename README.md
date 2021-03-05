@@ -29,9 +29,9 @@ userApi.registerByPhone({country: '+86', mobile: '13800000000'}).then(function (
 userApi.registerByEmail({email: "hicointest.@qq.com"}).then(function (data) {
     console.debug("注册邮箱结果：------" + JSON.stringify(data));
 });
-//3.获取用户指定币账户地址
-userApi.getUserInfo({symbol: "eth", uid: "3529218"}).then(function (data) {
-    console.debug("获取用户指定币账户地址结果：------" + JSON.stringify(data));
+//3.获取用户信息
+userApi.getUserInfo({ country:"86" , mobile: "138880000000"}).then(function (data) {
+    console.debug("获取用户信息址结果：------" + JSON.stringify(data));
 });
 //4.获取商户的币种列表
 userApi.getCoinList({time: Date.now()}).then(function (data) {
@@ -53,8 +53,7 @@ accountApi.getByUidAndSymbol({"symbol": "eth", "uid": 3529218}).then(function (d
 //8.提现
 billingApi.withdraw({
     "request_id": 12345678,
-    "from_uid": "",
-    "from_address": "0x754b0c610e011d0d40c810ef857b4dd989a67332",
+    "from_uid": "3529218",
     "to_address": "0x754b0c610e011d0d40c810ef857b4dd989a67332",
     "amount": "1.00000022",
     "symbol": "ETH"
