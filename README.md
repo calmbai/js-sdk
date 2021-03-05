@@ -4,7 +4,7 @@ waas api client sdk
 依赖包安装：
 
 ```
-npm install js-waas-sdk@1.0.3
+npm install js-waas-sdk@1.0.4
 ```
 
 使用方式:
