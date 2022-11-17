@@ -8,13 +8,13 @@ exports.GET = 'GET';
 exports.POST = 'POST';
 exports.app_id = '';
 
-//用户相关操作
+//User-related operations
 exports.createUser = "/user/createUser";
 exports.registerEmail = "/user/registerEmail";
 exports.getUserInfo = "/user/info";
 exports.getCoinList = "/user/getCoinList";
 
-//账户相关操作api
+//Account related operations api
 exports.getDepositAddress = "/account/getDepositAddress";
 exports.getByUidAndSymbol = "/account/getByUidAndSymbol";
 exports.getCompanyBySymbol = "/account/getCompanyBySymbol";
@@ -24,7 +24,7 @@ exports.getTransferList="/account/transferList";
 exports.syncTransferList="/account/syncTransferList";
 
 
-//充值相关操作api
+//Deposit-related operations api
 exports.syncDepositList = "/billing/syncDepositList";
 exports.getDepositList = "/billing/depositList";
 exports.syncMinerFeeList = "/billing/syncMinerFeeList";

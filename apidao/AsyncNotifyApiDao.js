@@ -1,10 +1,10 @@
 /**
- *  异步回调通知相关api(提供给waas的接口)
+ *  Asynchronous callback notification related api (interface provided to waas)
  */
 const RSA = require('../utils/RSAUtil');
 
 /**
- *  解密用户充值异步回调通知请求参数
+ *  Decrypt user deposit asynchronous callback notification request parameters
  * @param cipher
  */
 exports.decodeNotifyRequest = function (cipher) {
@@ -20,7 +20,7 @@ exports.decodeNotifyRequest = function (cipher) {
 };
 
 /**
- *  解密提现二次验证请求参数
+ *  Decryption and withdrawal secondary verification request parameters
  * @param cipher
  */
 exports.decodeWithdrawRequest = function (cipher) {
@@ -36,7 +36,7 @@ exports.decodeWithdrawRequest = function (cipher) {
 };
 
 /**
- *  加密二次验证提现响应数据
+ *  Encrypted secondary verification withdrawal response data
  * @param withdraw
  */
 exports.encodeWithdrawResponse = function (cipher) {

@@ -3,7 +3,7 @@ const WApiHttpUtils = require('../utils/WASSHttpUtils');
 const Cons = require('../utils/Constants');
 
 /**
- * 获取用户指定币账户
+ * Obtain user-specified coin account
  */
 exports.getByUidAndSymbol = async function (reqData) {
 
@@ -15,7 +15,7 @@ exports.getByUidAndSymbol = async function (reqData) {
     return RSA.publicKeyDecrypt(JSON.parse(respData).data);
 };
 /**
- * 获取商户归集账户余额
+ * Obtain the balance of the merchant's  account
  */
 exports.getCompanyBySymbol = async function (reqData) {
 
@@ -27,7 +27,7 @@ exports.getCompanyBySymbol = async function (reqData) {
     return RSA.publicKeyDecrypt(JSON.parse(respData).data);
 };
 /**
- * 获取用户指定币账户地址
+ * Obtain the address of the user-specified  account
  */
 exports.getDepositAddress = async function (reqData) {
 

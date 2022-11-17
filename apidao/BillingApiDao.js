@@ -4,7 +4,7 @@ const Cons = require('../utils/Constants');
 
 
 /**
- *同步充值记录
+ * Sync deposit record
  */
 exports.syncDepositList = async function (reqData) {
 
@@ -17,7 +17,7 @@ exports.syncDepositList = async function (reqData) {
 };
 
 /**
- * 批量获取充值记录
+ * Obtain deposit records in batches
  */
 exports.getDepositList = async function (reqData) {
 
@@ -30,7 +30,7 @@ exports.getDepositList = async function (reqData) {
 };
 
 /**
- * 同步矿工费记录
+ * Sync gas fee records
  */
 exports.syncMinerFeeList = async function (reqData) {
 
@@ -43,7 +43,7 @@ exports.syncMinerFeeList = async function (reqData) {
 };
 
 /**
- * 批量获取矿工费记录
+ * Get miner fee records in batches
  */
 exports.minerFeeList = async function (reqData) {
 
@@ -56,7 +56,7 @@ exports.minerFeeList = async function (reqData) {
 };
 
 /**
- * 用户提现
+ * User withdrawal
  */
 exports.withdraw = async function (reqData) {
 
@@ -69,7 +69,7 @@ exports.withdraw = async function (reqData) {
 };
 
 /**
- * 同步提现记录
+ * Sync withdrawal record
  */
 exports.syncWithdrawList = async function (reqData) {
 
@@ -82,7 +82,7 @@ exports.syncWithdrawList = async function (reqData) {
 };
 
 /**
- * 同步提现记录
+ * Sync withdrawal record
  */
 exports.getWithdrawList = async function (reqData) {
 

@@ -1,6 +1,6 @@
 /**
- * RSA 加密算法封装，
- * 对外提供加密、解密
+ * RSA encryption algorithm encapsulation，
+ * Provide encryption and decryption to the outside world
  */
 const NodeRSA = require("node-rsa");
 const Cons = require("./Constants");

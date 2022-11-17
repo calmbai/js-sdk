@@ -3,7 +3,7 @@ const WApiHttpUtils = require('../utils/WASSHttpUtils');
 const Cons = require('../utils/Constants');
 
 /**
- * 用户手机注册地址
+ * User mobile phone registration address
  */
 exports.registerByPhone = async function (reqData) {
 
@@ -18,7 +18,7 @@ exports.registerByPhone = async function (reqData) {
 };
 
 /**
- * 用户邮箱（虚拟账号）注册
+ * User email (virtual account) to register
  */
 exports.registerByEmail = async function (reqData) {
 
@@ -32,7 +32,7 @@ exports.registerByEmail = async function (reqData) {
 };
 
 /**
- * 查询用户信息
+ * Query user information
  */
 exports.getUserInfo = async function (reqData) {
 
@@ -45,7 +45,7 @@ exports.getUserInfo = async function (reqData) {
 };
 
 /**
- * 	获取商户的币种列表
+ * 	Get a list of the merchant's coins
  */
 exports.getCoinList = async function (reqData) {
 

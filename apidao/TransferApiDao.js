@@ -3,7 +3,7 @@ const WApiHttpUtils = require('../utils/WASSHttpUtils');
 const Cons = require('../utils/Constants');
 
 /**
- * WaaS内部商户互相转账
+ * WaaS internal merchants transfer to each other
  */
 exports.transfer = async function (reqData) {
 
@@ -16,7 +16,7 @@ exports.transfer = async function (reqData) {
 };
 
 /**
- * 批量查询转账记录
+ * Batch query transfer records
  */
 exports.getTransferList = async function (reqData) {
 
@@ -29,7 +29,7 @@ exports.getTransferList = async function (reqData) {
 };
 
 /**
- * 同步所有转账记录（分页）
+ * Sync all transfer records (pagination)
  */
 exports.syncTransferList = async function (reqData) {
 
