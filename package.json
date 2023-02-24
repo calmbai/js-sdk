@@ -1,6 +1,6 @@
 {
   "name": "js-waas-sdk",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "node sdk tool for calling waas service, wallet as a service, chainup custody",
   "main": "index.js",
   "scripts": {
