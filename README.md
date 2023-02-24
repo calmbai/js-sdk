@@ -4,17 +4,17 @@ waas api client sdk
 Dependency package installation：
 
 ```
-npm install js-waas-sdk@1.0.5
+npm install @chainup-custody/js-waas-sdk@1.0.5
 ```
 
 How to use:
 
 ```
-const userApi = require('js-waas-sdk/apidao/userApiDao');
-const accountApi = require('js-waas-sdk/apidao/AccountApiDao');
-const billingApi = require('js-waas-sdk/apidao/BillingApiDao');
-const Cons = require('js-waas-sdk/utils/Constants');
-const asyncApi = require('js-waas-sdk/apidao/AsyncNotifyApiDao');
+const userApi = require('@chainup-custody/js-waas-sdk/apidao/userApiDao');
+const accountApi = require('@chainup-custody/js-waas-sdk/apidao/AccountApiDao');
+const billingApi = require('@chainup-custody/js-waas-sdk/apidao/BillingApiDao');
+const Cons = require('@chainup-custody/js-waas-sdk/utils/Constants');
+const asyncApi = require('@chainup-custody/js-waas-sdk/apidao/AsyncNotifyApiDao');
 
 
 Cons.setAppId('baaceb1e506e1b5d7d1f0a3b1622583b');// app id
