@@ -4,7 +4,7 @@ waas api client sdk
 Dependency package installation：
 
 ```
-npm install @chainup-custody/js-waas-sdk@1.0.5
+npm install @chainup-custody/js-waas-sdk@1.0.6
 ```
 
 How to use:
