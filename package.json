@@ -1,5 +1,5 @@
 {
-  "name": "js-waas-sdk",
+  "name": "@chainup-custody/js-waas-sdk",
   "version": "1.0.5",
   "description": "node sdk tool for calling waas service, wallet as a service, chainup custody",
   "main": "index.js",
