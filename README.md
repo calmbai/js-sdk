@@ -4,7 +4,7 @@ waas api client sdk
 Dependency package installation：
 
 ```
-npm install js-waas-sdk@1.0.4
+npm install js-waas-sdk@1.0.5
 ```
 
 How to use:
